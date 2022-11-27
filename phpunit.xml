@@ -1,0 +1,37 @@
+<phpunit colors="true" stopOnError="true" verbose="true">
+    <testsuites>
+        <testsuite name="database">
+            <file>tests/Config/DatabaseTest.php</file>
+        </testsuite>
+        <testsuite name="view">
+            <file>tests/Config/ViewTest.php</file>
+        </testsuite>
+        <testsuite name="userRepository">
+            <file>tests/Repository/UserRepositoryTest.php</file>
+        </testsuite>
+        <testsuite name="userService">
+            <file>tests/Service/UserServiceTest.php</file>
+        </testsuite>
+        <testsuite name="userController">
+            <file>tests/Controller/UserControllerTest.php</file>
+        </testsuite>
+        <testsuite name="sessionRepository">
+            <file>tests/Repository/SessionRepositoryTest.php</file>
+        </testsuite>
+        <testsuite name="sessionService">
+            <file>tests/Service/SessionServiceTest.php</file>
+        </testsuite>
+        <testsuite name="homeController">
+            <file>tests/Controller/HomeControllerTest.php</file>
+        </testsuite>
+        <testsuite name="mustLoginMiddleware">
+            <file>tests/Middleware/MustLoginMiddlewareTest.php</file>
+        </testsuite>
+        <testsuite name="mustNotLoginMiddleware">
+            <file>tests/Middleware/MustNotLoginMiddlewareTest.php</file>
+        </testsuite>
+        <testsuite name="all">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>         
+</phpunit>

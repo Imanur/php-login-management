@@ -1,0 +1,40 @@
+{
+    "name": "programmerphp/loginmanagement",
+    "description": "Login Management",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Programmerphp\\Loginmanagement\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Programmerphp\\Loginmanagement\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Iman Nur Izza",
+            "email": "muhimannurizza@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.25"
+    },
+    "scripts": {
+        "test": "phpunit --configuration phpunit.xml",
+        "test:db" : "phpunit --configuration phpunit.xml --testsuite database",
+        "test:render" : "phpunit --configuration phpunit.xml --testsuite view",
+        "test:userRepository" : "phpunit --configuration phpunit.xml --testsuite userRepository",
+        "test:userService" : "phpunit --configuration phpunit.xml --testsuite userService",
+        "test:userController" : "phpunit --configuration phpunit.xml --testsuite userController",
+        "test:sessionRepository" : "phpunit --configuration phpunit.xml --testsuite sessionRepository",
+        "test:sessionService" : "phpunit --configuration phpunit.xml --testsuite sessionService",
+        "test:homeController" : "phpunit --configuration phpunit.xml --testsuite homeController",
+        "test:mustLoginMiddleware" : "phpunit --configuration phpunit.xml --testsuite mustLoginMiddleware",
+        "test:mustNotLoginMiddleware" : "phpunit --configuration phpunit.xml --testsuite mustNotLoginMiddleware"
+    }
+}
